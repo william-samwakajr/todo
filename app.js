@@ -1,13 +1,13 @@
-let taskToAdd = document.getElementById('add input');
-const addButton = document.getElementById('create-task');
-let taskarea = document.getElementsByClassName("tasks");
+let taskToAdd = document.getElementById('addinput');
+const addButton = document.querySelector('#createTask');
+const taskarea = document.querySelector(".tasks");
 
 function addTask() {
     let newTask = document.createElement('p');
     newTask.innerHTML = taskToAdd.value;
 
     taskarea.append(newTask);
-    taskToAdd.value = '';
+
 }
 
 function deleteTask() {
