@@ -7,6 +7,7 @@ function addTask() {
     newTask.innerHTML = taskToAdd.value;
 
     taskarea.append(newTask);
+    taskToAdd.value = "";
 
 }
 
